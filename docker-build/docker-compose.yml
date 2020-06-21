@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dsview-build:
+    build:
+      context: ../
+      dockerfile: docker-build/Dockerfile
+    volumes:
+      - .:/host
+    # it needs for fuse
+    privileged: true

@@ -16,7 +16,9 @@ RUN apt-get update && apt-get install -y \
   libboost-filesystem-dev \
   libboost-system-dev \
   libboost-thread-dev \
-  sudo
+  sudo \
+  wget \
+  fuse
 
 ADD docker-build/compile.sh .
 RUN chmod +x compile.sh
